@@ -1,0 +1,46 @@
+/* ----- CSS RESET (simplified) ----- */
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,Arial,sans-serif;}
+a{color:#0066cc;text-decoration:none;} a:hover{text-decoration:underline;}
+body{line-height:1.6;background:#f8f9fa;color:#222;}
+
+/* ----- NAVBAR ----- */
+.navbar{display:flex;align-items:center;justify-content:space-between;
+        padding:0.75rem 1.25rem;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.05);}
+.logo{font-weight:600;font-size:1.1rem;}
+#navLinks{display:flex;gap:1rem;}
+#navLinks a{padding:0.25rem 0.5rem;}
+#navLinks .active{border-bottom:2px solid #0066cc;}
+.hamburger{display:none;font-size:1.4rem;background:none;border:none;}
+
+/* ----- HERO ----- */
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;
+      padding:4rem 1rem;background:#e9ecef;}
+.hero-img{width:180px;height:180px;border-radius:50%;object-fit:cover;margin-bottom:1rem;}
+.hero-title{font-size:1.8rem;font-weight:600;}
+.hero-sub{margin:0.5rem 0 1.5rem;}
+.btn{display:inline-block;padding:0.6rem 1.2rem;border-radius:4px;font-weight:600;}
+.primary{background:#0066cc;color:#fff;} .primary:hover{background:#004c99;}
+
+/* ----- CONTAINER ----- */
+.container{max-width:900px;margin:auto;padding:2rem 1rem;}
+
+/* ----- CARD ----- */
+.card{background:#fff;border-radius:6px;padding:1.5rem;margin-bottom:1.5rem;
+      box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.card h2{margin-bottom:0.4rem;} .meta{color:#555;font-size:0.9rem;margin-bottom:0.8rem;}
+
+/* ----- SKILLS GRID ----- */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.6rem;}
+.skills-grid span{background:#dce4ff;padding:0.4rem 0.6rem;border-radius:4px;text-align:center;}
+
+/* ----- FOOTER ----- */
+footer{background:#fff;text-align:center;padding:1rem;font-size:0.9rem;margin-top:2rem;
+       box-shadow:0 -2px 4px rgba(0,0,0,0.05);}
+
+/* ----- RESPONSIVE NAV ----- */
+@media (max-width:768px){
+  .hamburger{display:block;}
+  #navLinks{flex-direction:column;position:absolute;top:60px;right:1rem;
+            background:#fff;border:1px solid #ddd;border-radius:4px;padding:0.5rem;display:none;}
+  #navLinks.show{display:flex;}
+}
