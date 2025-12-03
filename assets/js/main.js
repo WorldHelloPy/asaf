@@ -1,4 +1,8 @@
-/* Toggle mobile nav */
-document.getElementById('navToggle').addEventListener('click',() =>{
-  document.getElementById('navLinks').classList.toggle('show');
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
 });
