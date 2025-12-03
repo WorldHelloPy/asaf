@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
 <header class="navbar">
   <div class="logo">Asaf Correa</div>
-  <button id="navToggle" class="hamburger">&#9776;</button>
+  <button id="navToggle" class="hamburger" aria-label="Menu">&#9776;</button>
   <nav id="navLinks">
     <a href="index.html">Home</a>
     <a href="about.html" class="active">About</a>
@@ -18,30 +19,45 @@
   </nav>
 </header>
 
-<main class="container">
-  <h1>Career Purpose</h1>
-  <p>
-    I engineer data-driven solutions that enhance human flourishing.  
-    My goal is to blend rigorous Computer Science with Biblical insight to build technology that serves communities ethically.
-  </p>
+<main class="container text-center">
+  <h1>About Me</h1>
+  
+  <div class="card">
+    <h2>Career Purpose</h2>
+    <p style="font-size: 1.1rem; color: #555;">
+      I engineer data-driven solutions that enhance human flourishing. <br> 
+      My goal is to blend rigorous Computer Science with Biblical insight to build technology that serves communities ethically.
+    </p>
+  </div>
 
-  <h2>Education</h2>
-  <ul>
-    <li><strong>B.S. Computer Science</strong>, Biola University (GPA 3.74) – expected Fall 2025</li>
-    <li><strong>B.A. Bible, Theology & Biblical Languages</strong>, Biola University</li>
-  </ul>
+  <div class="card">
+    <h2>Education</h2>
+    <ul style="font-size: 1.05rem; list-style-type: none;">
+      <li style="margin-bottom: 0.5rem;"><strong>B.S. Computer Science</strong> <br> Biola University (GPA 3.74) – Expected Fall 2025</li>
+      <li style="margin-top: 1rem;"><strong>B.A. Bible, Theology & Biblical Languages</strong> <br> Biola University</li>
+    </ul>
+  </div>
 
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <span>Python</span><span>C++</span><span>JavaScript</span><span>HTML / CSS</span>
-    <span>TensorFlow</span><span>PyTorch</span><span>Linux (Arch)</span>
-    <span>Data Analysis</span><span>Cybersecurity (NCL)</span>
+  <div class="text-center">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <span>Python</span>
+      <span>C++</span>
+      <span>JavaScript</span>
+      <span>HTML / CSS</span>
+      <span>TensorFlow</span>
+      <span>PyTorch</span>
+      <span>Linux (Arch)</span>
+      <span>Data Analysis</span>
+      <span>Cybersecurity (NCL)</span>
+    </div>
   </div>
 </main>
 
 <footer>
-  © 2025 Asaf Correa
+  © 2025 Asaf Correa · <a href="https://linkedin.com/in/asafcorrea" target="_blank">LinkedIn Profile</a>
 </footer>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
