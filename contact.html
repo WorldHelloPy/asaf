@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
 <header class="navbar">
   <div class="logo">Asaf Correa</div>
-  <button id="navToggle" class="hamburger">&#9776;</button>
+  <button id="navToggle" class="hamburger" aria-label="Menu">&#9776;</button>
   <nav id="navLinks">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -19,15 +20,24 @@
 </header>
 
 <main class="container">
-  <h1>Let’s connect</h1>
-  <p>Email: <a href="mailto:asaf.correa@biola.edu">asaf.correa@biola.edu</a></p>
-  <p>Phone: +1 (562) 574-5364</p>
-  <p><a href="https://linkedin.com/in/asafcorrea" target="_blank">View my LinkedIn profile ↗</a></p>
+  <h1>Let’s Connect</h1>
+  
+  <div class="contact-box">
+    <p>I am open to opportunities in Data Science and Software Engineering.</p>
+    
+    <div style="margin: 2rem 0;">
+      <p>Email: <br> <a href="mailto:asaf.correa@biola.edu" class="contact-link">asaf.correa@biola.edu</a></p>
+      <p>Phone: <br> +1 (562) 574-5364</p>
+    </div>
+
+    <a href="https://linkedin.com/in/asafcorrea" target="_blank" class="btn primary">View LinkedIn Profile ↗</a>
+  </div>
 </main>
 
 <footer>
-  © 2025 Asaf Correa
+  © 2025 Asaf Correa · <a href="https://linkedin.com/in/asafcorrea" target="_blank">LinkedIn Profile</a>
 </footer>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
